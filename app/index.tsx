@@ -1,15 +1,15 @@
-import { Text, View } from "react-native";
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Login from '@/app/screens/Login'
+import GradientButton from './components/GradientButton';
+import { View } from 'react-native';
 
-export default function Index() {
+const Stack = createNativeStackNavigator();
+
+export default function App(){
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+    <View>
+      <GradientButton title="Login" onPress={() => {/* call your auth */}} />
     </View>
   );
 }
