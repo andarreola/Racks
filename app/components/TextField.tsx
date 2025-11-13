@@ -6,7 +6,7 @@ type Props = TextInputProps & {leftIcon?: React.ReactNode; };
 
 export default function TextField(props: Props){
     const [focused, setFocused] = useState(false);
-
+    
     return (
         <LinearGradient
             colors = {focused ? ['#F05656', '#EB823D'] : ['#EDEDED', '#EDEDED']}
