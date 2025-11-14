@@ -29,7 +29,7 @@ export default function TextField(props: Props){
                     placeholderTextColor = '#9Fa4AD'
                     onFocus = {(e) => {setFocused(true); props.onFocus?.(e);}}
                     onBlur = {(e) => {setFocused(false); props.onBlur?.(e);}}
-                    style = {[{flex:1, fontSize:16} as any, props.style]}
+                    style = {[{flex:1, fontSize:14, fontFamily: 'DuruSans'} as any, props.style]}
                 />              
             </View>
         </LinearGradient>    
