@@ -3,6 +3,7 @@ import { Stack } from 'expo-router';
 import { ActivityIndicator, View, StatusBar, useColorScheme } from 'react-native';
 import { useFonts, Outfit_700Bold, Outfit_900Black } from '@expo-google-fonts/outfit';
 
+
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({
     Outfit_700Bold,
