@@ -12,7 +12,7 @@ export default function Login(){
     return (
         <Screen>
             <View style = {{marginTop: 160}}>
-                <Text style = {{fontFamily: 'Outfit_900Black', fontSize: 48, lineHeight: 52}}>Racks</Text>
+                <Text style = {{fontFamily: 'Lemon-Milk', fontSize: 48, lineHeight: 52}}>Racks</Text>
 
                 <View style = {{marginTop: 24}}/>
 
@@ -35,9 +35,9 @@ export default function Login(){
                 <GradientButton title = "Login" onPress={() => {/* call auth */}}/>
                 
                 <View style = {{alignItems: 'center', marginTop: 24, flexDirection: 'row', justifyContent: 'center'}}>
-                    <Text style = {{fontSize: 14, color: '#6b6b6b'}}>New here?</Text>
+                    <Text style = {{fontSize: 14, color: '#6b6b6b', fontFamily: 'DuruSans'}}>New here?</Text>
                     <Link href = "/signup" asChild>
-                        <Pressable><Text style = {{color: '#F05656', marginLeft: 6, fontWeight: '600'}}>Sign Up</Text></Pressable>
+                        <Pressable><Text style = {{color: '#F05656', marginLeft: 6, fontWeight: '600', fontFamily: 'DuruSans'}}>Sign Up</Text></Pressable>
                     </Link>
                 </View>
             </View>

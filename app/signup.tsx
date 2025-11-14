@@ -15,8 +15,8 @@ export default function SignUp() {
 
     <Screen>
         <View style = {{marginTop: 110}}>
-        <Text style = {{fontFamily: 'Outfit_900Black', fontSize: 48, lineHeight: 52}}>Create{'\n'}Account</Text>
-        <View style = {{marginTop: 24}}/>
+        <Text style = {{fontFamily: 'Lemon-Milk', fontSize: 48, lineHeight: 52}}>Create{'\n'}Account</Text>
+        <View style = {{marginTop: 10}}/>
         <View style={{ height: 24 }} />
         <TextField placeholder="Username" value={username} onChangeText={setUsername} autoCapitalize="none" />
         <View style={{ height: 12 }} />
@@ -31,7 +31,7 @@ export default function SignUp() {
         
         <View style = {{alignItems: 'center', marginTop: 24, flexDirection: 'row', justifyContent: 'center'}}>
             <Link href = "/login" asChild>
-            <Pressable><Text style = {{color: '#F05656', marginLeft: 6, fontWeight: '600'}}>Return to login</Text></Pressable>
+            <Pressable><Text style = {{color: '#F05656', marginLeft: 6, fontWeight: '600', fontFamily: 'DuruSans'}}>Return to login</Text></Pressable>
         </Link>
         </View>
         

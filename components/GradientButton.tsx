@@ -20,7 +20,7 @@ export default function GradientButton({title, onPress, style, disabled}: Props)
                 shadowOpacity: 0.25, shadowRadius: 8, shadowOffset: {width: 0, height:6}, elevation: 4
             }} 
         >
-            <Text style = {{color: '#fff', fontWeight: '600', fontSize: 16}}>
+            <Text style = {{color: '#fff', fontWeight: '600', fontSize: 16, fontFamily: 'DuruSans'}}>
                 {title}
             </Text>
         </LinearGradient>

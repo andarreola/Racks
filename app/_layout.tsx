@@ -6,7 +6,9 @@ import { useFonts, Outfit_700Bold, Outfit_900Black } from '@expo-google-fonts/ou
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({
     Outfit_700Bold,
-    Outfit_900Black, // used for big headings like "Racks" / "Create Account"
+    Outfit_900Black, 
+    'Lemon-Milk': require('../assets/fonts/LEMONMILK-BoldItalic.otf'),
+    'DuruSans': require('../assets/fonts/DuruSans-Regular.ttf')// used for big headings like "Racks" / "Create Account"
   });
 
   const scheme = useColorScheme();
