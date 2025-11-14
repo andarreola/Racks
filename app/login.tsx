@@ -3,7 +3,7 @@ import Screen from '../components/Screen';
 import TextField from '../components/TextField';
 import GradientButton from '../components/GradientButton';
 import { useState } from 'react';
-import { Link } from 'expo-router';
+import { Link, router } from 'expo-router';
 import { FIREBASE_AUTH } from '../FirebaseConfig';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
 
@@ -13,21 +13,15 @@ export default function Login(){
     const [loading, setLoading] = useState(false);
     const auth = FIREBASE_AUTH;
 
-    
+
     const signIn = async () => {
-        setLoading(true);
         try {
-            const response = await signInWithEmailAndPassword(auth, email, password);
-            console.log(response);
-            alert('Login successful!');
-        } catch (error: any) {
-            console.error("Login error: ", error);
-            alert('Login failed: ' + error.message);
-        } finally {
-            setLoading(false);
+            const res = await signInWithEmailAndPassword(auth, email, password);
+            if(res.user) router.replace('/(tabs)/home'); //navigate to home on success
+        } catch (error) {
+            console.log('sign in error:', error);
         }
     }
-
 
     return (
         <Screen>
