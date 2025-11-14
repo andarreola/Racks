@@ -1,15 +1,5 @@
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Login from '@/app/screens/Login'
-import GradientButton from './components/GradientButton';
-import { View } from 'react-native';
-
-const Stack = createNativeStackNavigator();
-
-export default function App(){
-  return (
-    <View>
-      <GradientButton title="Login" onPress={() => {/* call your auth */}} />
-    </View>
-  );
+import {Redirect} from 'expo-router';
+export default function IndexPage(){
+    // Redirect to login screen for now (no auth yet)
+    return <Redirect href = "/login"/>;
 }
