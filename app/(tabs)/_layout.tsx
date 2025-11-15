@@ -4,6 +4,10 @@ export default function TabsLayout(){
     return (
         <Tabs screenOptions = {{headerShown: false}}>
             <Tabs.Screen name = "home"/>
+            <Tabs.Screen name = "workouts"/>
+            <Tabs.Screen name = "createPost"/>
+            <Tabs.Screen name = "progress"/>
+            <Tabs.Screen name = "profile"/>
         </Tabs>
     )
 }
