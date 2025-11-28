@@ -15,12 +15,12 @@ export default function GradientButton({title, onPress, style, disabled}: Props)
             colors = {['#F05656', '#EB823D']} //pink to orange
             start = {{x: 0, y: 0}} end = {{x: 1, y: 1}}
             style= {{
-                borderRadius: 30, paddingVertical: 14, paddingHorizontal: 24,
+                borderRadius: 8, paddingVertical: 14, paddingHorizontal: 24,
                 alignItems: 'center', justifyContent: 'center', shadowColor: '#FF6A00',
                 shadowOpacity: 0.25, shadowRadius: 8, shadowOffset: {width: 0, height:6}, elevation: 4
             }} 
         >
-            <Text style = {{color: '#fff', fontWeight: '600', fontSize: 16, fontFamily: 'DuruSans'}}>
+            <Text style = {{color: '#fff', fontWeight: '600', fontSize: 16, fontFamily: 'Lemon-Milk'}}>
                 {title}
             </Text>
         </LinearGradient>

@@ -1,7 +1,8 @@
 // app/_layout.tsx  (pre-auth)
-import { Stack } from 'expo-router';
-import { ActivityIndicator, View, StatusBar, useColorScheme } from 'react-native';
+import { router, Stack } from 'expo-router';
+import { ActivityIndicator, View, StatusBar, useColorScheme, Pressable } from 'react-native';
 import { useFonts, Outfit_700Bold, Outfit_900Black } from '@expo-google-fonts/outfit';
+import Ionicons from '@expo/vector-icons/build/Ionicons';
 
 
 export default function RootLayout() {
@@ -24,6 +25,34 @@ export default function RootLayout() {
     );
   }
   
-  return <Stack screenOptions={{ headerShown: false }} />;
+  return (
+    <Stack>
+      <Stack.Screen name = "login" options = {{headerShown: false}}/>
+      <Stack.Screen name = "signup" options = {{headerShown: false}}/>
+      <Stack.Screen name = "(tabs)" options = {{headerShown: false}}/>
 
+      <Stack.Screen 
+        name = "settings"
+        options = {{
+          headerShown: true,
+          title: 'Settings',
+          headerTitleAlign: 'center',
+          headerTitleStyle: {
+            fontFamily: 'Lemon-Milk',
+            fontSize: 22,
+          },
+          headerStyle: {
+            backgroundColor: '#fff',
+          },
+          headerLeft: () => (
+            <Pressable onPress = {() => router.replace('/(tabs)/profile')}>
+              <Ionicons name = "chevron-back-sharp" size = {24}/>
+            </Pressable>
+          
+          ),
+        }}
+        
+      />    
+    </Stack>
+  );
 }
