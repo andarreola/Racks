@@ -1,23 +1,31 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Pressable, Button} from 'react-native';
+import Screen from '../../components/Screen';
+import GradientButton from '../../components/GradientButton';
 
 export default function Workouts(){
     return (
-        <View style={styles.container}>
-            <Text style={styles.title}>Workouts Screen</Text>
-        </View>
+        <Screen>
+            <View style = {{height: 500}}>
+                {/*TODO: Make workouts appear here*/}
+            </View>
+            <GradientButton
+                title = "New Workout"
+                onPress={() => {{/*TODO: go to add workout screen*/}}}
+            > 
+            </GradientButton>
+        </Screen>
     );
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#fff',
-    },
     title: {
-        fontSize: 24,
-        fontWeight: 'bold',
+        fontSize: 28,
+        fontFamily: 'Lemon-Milk',
+        
     },
+    addButton: {
+        fontFamily: 'Lemon-Milk',
+
+    }
 });

@@ -5,7 +5,7 @@ import GradientButton from '../components/GradientButton';
 import { useState } from 'react';
 import { Link, router } from 'expo-router';
 import { FIREBASE_AUTH } from '../FirebaseConfig';
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 
 export default function Login(){
     const [email, setEmail] = useState('');

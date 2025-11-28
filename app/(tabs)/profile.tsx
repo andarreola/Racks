@@ -1,11 +1,12 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
+import Screen from '../../components/Screen';
 
 export default function Profile(){
     return (
-        <View style={styles.container}>
-            <Text style={styles.title}>Profile Screen</Text>
-        </View>
+        <Screen>
+            {/* Placeholder for Profile Screen */}
+        </Screen>
     );
 }
 
@@ -19,5 +20,13 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 24,
         fontWeight: 'bold',
+        fontFamily: 'Lemon-Milk',
     },
+    settingButton: {
+        fontSize: 32,
+        fontWeight: 'bold',
+        textAlign: 'right',
+        marginRight: 5,
+        marginTop: 0
+    }    
 });

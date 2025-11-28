@@ -2,7 +2,7 @@ import Screen from '../components/Screen';
 import TextField from '../components/TextField';
 import GradientButton from '../components/GradientButton';
 import { useState } from 'react';
-import { View, Text, Pressable, ActivityIndicator, Keyboard, KeyboardAvoidingView } from 'react-native';
+import { View, Text, Pressable, ActivityIndicator, KeyboardAvoidingView } from 'react-native';
 import { Link } from 'expo-router';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { FIREBASE_AUTH } from '../FirebaseConfig';
